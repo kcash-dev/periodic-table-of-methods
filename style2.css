@@ -9,6 +9,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
 hr {
     margin: 0;
     padding: 0;
@@ -60,7 +61,7 @@ hr {
 }
 
 .name {
-    color: white;
+    color: black;
     font-size: 11px;
     padding: 0;
     margin: 0;
@@ -255,6 +256,12 @@ hr {
     box-shadow: .3rem .3rem .8rem white;
     overflow: hidden;
 }
+
+.gold {
+    background-color: gold;
+    color: black;
+}
+
 
 .active > .name {
     color: red;
