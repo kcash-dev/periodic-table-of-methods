@@ -1,0 +1,436 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(17, auto) 1fr;
+    grid-template-rows: repeat(14, auto) 1fr;
+    max-width: 100%;
+}
+
+.element {
+    text-align: center;
+    border: 1px solid black;
+    width: 8.7vh;
+    height: 8.7vh;
+    color: white;
+    border: 1px solid white;
+    transition: all .5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.element:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    background-color: white;
+    color: red;
+    transition: all .5s;
+    box-shadow: .3rem .3rem .8rem white;
+    overflow: hidden;
+}
+
+.element:hover > .name {
+    color: red;
+}
+
+.id {
+    margin-top: 1px;
+}
+
+.name {
+    color: white;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+
+.show-on-load {
+    position: absolute;
+    top: 9vh;
+    left: 10.5vw;
+    background-color: white;
+    width: 52.5vw;
+    height: 18vh;
+    font-size: 14px;
+}
+
+.show-on-load img {
+    width: 5vw;
+    display: inline-block;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.hide {
+    display: none;
+    position: absolute;
+    top: 9vh;
+    left: 10.5vw;
+    background-color: white;
+    width: 52.5vw;
+    height: 18vh;
+    overflow: scroll;
+}
+
+.desc-info {
+    color: black;
+    font-size: 1rem;
+}
+
+.desc-img {
+    width: 5vw;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.code-div {
+    display: inline-block;
+    position: relative;
+    left: 3vw;
+    bottom: 3vh;
+}
+
+.code-example {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
+
+.code-example-image {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.element:hover + .hide {
+    display: block;
+}
+
+.math {
+    background-color: indianred;
+    transition: all .5s;
+}
+
+.array {
+    background-color: sandybrown;
+    transition: all .5s;
+}
+
+.elements {
+    background-color: crimson;
+    transition: all .5s;
+}
+
+.node {
+    background-color: goldenrod;
+    transition: all .5s;
+}
+
+.string {
+    background-color: violet;
+    transition: all .5s;
+}
+
+.number {
+    background-color: limegreen;
+    transition: all .5s;
+}
+
+.global {
+    background-color: blueviolet;
+    transition: all .5s;
+}
+
+.window {
+    background-color: grey;
+    transition: all .5s;
+}
+
+.mathBox {
+    background-color: indianred;
+    transition: all .5s;
+}
+
+.numberBox {
+    background-color: limegreen;
+    transition: all .5s;
+}
+
+.arrayBox {
+    background-color: sandybrown;
+    transition: all .5s;
+}
+
+.stringBox {
+    background-color: violet;
+    transition: all .5s;
+}
+
+.elementsBox {
+    background-color: crimson;
+    transition: all .5s;
+}
+
+.nodeBox {
+    background-color: goldenrod;
+    transition: all .5s;
+}
+
+.globalBox {
+    background-color: blueviolet;
+    transition: all .5s;
+}
+
+.windowBox {
+    background-color: grey;
+    transition: all .5s;
+}
+
+.mathBox:hover,
+.numberBox:hover,
+.arrayBox:hover,
+.stringBox:hover,
+.elementsBox:hover,
+.nodeBox:hover,
+.globalBox:hover,
+.windowBox:hover {
+    cursor: pointer;
+    box-shadow: .3rem .3rem .8rem white;
+    transform: translateY(-3px);
+}
+
+.legend {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, auto) 1fr;
+    margin-top: 2rem;
+    left: 50%;
+    bottom: 3vh;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.legend-text {
+    color: white;
+    display: inline-block;
+}
+
+.box {
+    height: 3vh;
+    width: 3vh;
+    display: inline-block;
+    margin: 2px;
+    padding: 10px;
+}
+
+.active {
+    display: block;
+    transform: translateY(-3px);
+    background-color: white;
+    color: red;
+    transition: all .5s;
+    box-shadow: .3rem .3rem .8rem white;
+    overflow: hidden;
+}
+
+.active > .name {
+    color: red;
+}
+
+.active + .element {
+    background-color: white;
+}
+
+.active + .hide {
+    display: block;
+}
+
+.element-2 {
+    grid-column-start: -2;
+}
+
+.element-5,
+.element-13 {
+    grid-column-start: 13;
+}
+
+.element-90,
+.element-91,
+.element-92,
+.element-93,
+.element-94,
+.element-95,
+.element-96,
+.element-97,
+.element-98,
+.element-99,
+.element-100,
+.element-101,
+.element-102,
+.element-103 {
+    margin-top: 3rem;
+}
+
+.element-90 {
+    grid-row-start: 12;
+    grid-column-start: 3;
+}
+
+.element-91 {
+    grid-row-start: 12;
+    grid-column-start: 4;
+}
+
+.element-92 {
+    grid-row-start: 12;
+    grid-column-start: 5;
+}
+
+.element-93 {
+    grid-row-start: 12;
+    grid-column-start: 6;
+}
+
+.element-94 {
+    grid-row-start: 12;
+    grid-column-start: 7;
+}
+
+.element-95 {
+    grid-row-start: 12;
+    grid-column-start: 8;
+}
+
+.element-96 {
+    grid-row-start: 12;
+    grid-column-start: 9;
+}
+
+.element-97 {
+    grid-row-start: 12;
+    grid-column-start: 10;
+}
+
+.element-98 {
+    grid-row-start: 12;
+    grid-column-start: 11;
+}
+
+.element-99 {
+    grid-row-start: 12;
+    grid-column-start: 12;
+}
+
+.element-100 {
+    grid-row-start: 12;
+    grid-column-start: 13;
+}
+
+.element-101 {
+    grid-row-start: 12;
+    grid-column-start: 14;
+}
+
+.element-102 {
+    grid-row-start: 12;
+    grid-column-start: 15;
+}
+
+.element-103 {
+    grid-row-start: 12;
+    grid-column-start: 16;
+}
+
+.element-104 {
+    grid-row-start: 14;
+    grid-column-start: 3;
+}
+
+.element-105 {
+    grid-row-start: 14;
+    grid-column-start: 4;
+}
+
+.element-106 {
+    grid-row-start: 14;
+    grid-column-start: 5;
+}
+
+.element-107 {
+    grid-row-start: 14;
+    grid-column-start: 6;
+}
+
+.element-108 {
+    grid-row-start: 14;
+    grid-column-start: 7;
+}
+
+.element-109 {
+    grid-row-start: 14;
+    grid-column-start: 8;
+}
+
+.element-110 {
+    grid-row-start: 14;
+    grid-column-start: 9;
+}
+
+.element-111 {
+    grid-row-start: 14;
+    grid-column-start: 10;
+}
+
+.element-112 {
+    grid-row-start: 14;
+    grid-column-start: 11;
+}
+
+.element-113 {
+    grid-row-start: 14;
+    grid-column-start: 12;
+}
+
+.element-114 {
+    grid-row-start: 14;
+    grid-column-start: 13;
+}
+
+.element-115 {
+    grid-row-start: 14;
+    grid-column-start: 14;
+}
+
+.element-116 {
+    grid-row-start: 14;
+    grid-column-start: 15;
+}
+
+.element-117 {
+    grid-row-start: 14;
+    grid-column-start: 16;
+}
+
