@@ -550,8 +550,7 @@ const windows = document.querySelectorAll('.window');
 function identifyMethods(box, methodArea) {
     box.addEventListener('mouseover', () => {
         methodArea.forEach(el => {
-            el.style.boxShadow = '.3rem .3rem .8rem white';
-            el.style.transform = 'translateY(-3px)';
+            el.classList.add('highlight');
         });
     })
 };
@@ -559,8 +558,7 @@ function identifyMethods(box, methodArea) {
 function unidentifyMethods(box, methodArea) {
     box.addEventListener('mouseout', () => {
         methodArea.forEach(el => {
-            el.style.boxShadow = '';
-            el.style.transform = 'translateY(0)';
+            el.classList.remove('highlight');
         });
     })
 }

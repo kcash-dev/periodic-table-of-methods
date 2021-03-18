@@ -39,6 +39,7 @@ hr {
     margin: 0;
     padding: 0;
     position: relative;
+    z-index: 10;
 }
 
 .element:hover {
@@ -61,7 +62,7 @@ hr {
 
 .name {
     color: white;
-    font-size: 11px;
+    font-size: 7px;
     padding: 0;
     margin: 0;
     font-style: italic;
@@ -269,6 +270,15 @@ hr {
     max-height: 18vh;
     max-width: 53vw;
 }
+
+.highlight {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    transform: translateY(-3px);
+    box-shadow: .3rem .3rem .8rem white;
+}
+
 
 .element-2 {
     grid-column-start: -2;
