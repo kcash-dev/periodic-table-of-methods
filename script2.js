@@ -544,6 +544,7 @@ const globalBox = document.querySelector('.globalBox');
 const global = document.querySelectorAll('.global');
 const windowBox = document.querySelector('.windowBox');
 const windows = document.querySelectorAll('.window');
+const portraitMode = document.querySelector('#portrait-mode');
 
 
 
@@ -562,6 +563,10 @@ function unidentifyMethods(box, methodArea) {
         });
     })
 }
+
+portraitMode.addEventListener('click', () => {
+    portraitMode.style.display = 'none';
+})
 
 identifyMethods(mathBox, math);
 unidentifyMethods(mathBox, math);

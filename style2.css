@@ -301,6 +301,31 @@ hr {
     font-style: italic;
 }
 
+.portrait-mode {
+    width: 75%;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    background-color: white;
+    height: 40vh;
+    border-radius: 7px;
+    box-shadow: .3rem .3rem .8rem black;
+    display:  none;
+}
+
+.portrait-mode h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5vh;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+}
+
 .element-2 {
     grid-column-start: -2;
 }
@@ -506,12 +531,20 @@ hr {
         border-radius: 100%;
         transform: scale(.4);
     }
+
+    .portrait-mode {
+        display: block;
+    }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
     .hide, .show-on-load {
         max-height: 18.5vh;
         max-width: 52vw;
+    }
+
+    .portrait-mode {
+        display: block;
     }
 }
 
