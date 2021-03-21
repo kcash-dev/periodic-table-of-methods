@@ -228,8 +228,8 @@ hr {
     grid-template-columns: repeat(8, auto) 1fr;
     margin-top: 2rem;
     left: 50%;
-    bottom: .7vh;
     transform: translate(-50%);
+    bottom: .7vh;
     text-align: center;
 }
 
@@ -531,7 +531,9 @@ hr {
         border-radius: 100%;
         transform: scale(.4);
     }
+}
 
+@media (orientation: portrait) and (max-width: 800px) {
     .portrait-mode {
         display: block;
     }
@@ -542,25 +544,26 @@ hr {
         max-height: 18.5vh;
         max-width: 52vw;
     }
-
-    .portrait-mode {
-        display: block;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 968px) {
     .hide, .show-on-load {
-        max-height: 18.4vh;
-        max-width: 45.85vw;
+        max-height: 23vh;
+        max-width: 73vw;
     }
 
     .box {
         border-radius: 100%;
         transform: scale(.4);
     }
+
+    .element {
+        height: 10.6vh;
+        width: 10.6vh;
+    }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 969px) and (max-width: 1279px) {
     .hide, .show-on-load {
         max-height: 18vh;
         max-width: 120vw;
@@ -568,6 +571,5 @@ hr {
 }
 
 @media (min-width: 1280px) {
-
 }
 
