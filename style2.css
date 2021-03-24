@@ -75,23 +75,6 @@ hr {
     font-style: italic;
 }
 
-.show-on-load {
-    background-color: white;
-    font-size: 2vh;
-}
-
-.show-on-load img {
-    width: 5vw;
-    display: inline-block;
-    border: 1px solid black;
-    border-top: 0;
-}
-
-.hide {
-    display: none;
-    background-color: white;
-}
-
 .desc-info {
     color: black;
     font-size: 1rem;
@@ -251,6 +234,23 @@ hr {
     box-shadow: .3rem .3rem .8rem darkslategrey;
 }
 
+.show-on-load {
+    background-color: white;
+    font-size: 2vh;
+}
+
+.show-on-load img {
+    width: 5vw;
+    display: inline-block;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.hide {
+    display: none;
+    background-color: white;
+}
+
 .active {
     display: block;
     transform: translateY(-3px);
@@ -279,6 +279,7 @@ hr {
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 4;
+    grid-gap: 0;
     z-index: 1;
     overflow-y: scroll;
     max-height: 18vh;
@@ -524,7 +525,7 @@ hr {
 
 @media (max-width: 639px) {
     .hide, .show-on-load {
-        max-height: 18.6vh;
+        max-height: 18.2vh;
         max-width: 160vw;
     }
      
@@ -542,14 +543,14 @@ hr {
 
 @media (min-width: 640px) and (max-width: 767px) {
     .hide, .show-on-load {
-        max-height: 18.5vh;
+        max-height: 18.1vh;
         max-width: 160vw;
     }
 }
 
 @media (min-width: 768px) and (max-width: 968px) {
     .hide, .show-on-load {
-        max-height: 23vh;
+        max-height: 21.8vh;
         max-width: 160vw;
     }
 
@@ -580,7 +581,7 @@ hr {
         z-index: 1;
         overflow-y: scroll;
         max-height: 17.9vh;
-        max-width: 120vw;
+        max-width: 52.5vw;
     }
 }
 
