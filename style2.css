@@ -283,6 +283,7 @@ hr {
     overflow-y: scroll;
     max-height: 18vh;
     max-width: 53vw;
+    font-size: 
 }
 
 .highlight {
@@ -502,7 +503,7 @@ hr {
 
 ::-webkit-scrollbar
 {
-	width: 10px;
+	width: 5px;
 	background-color: #F5F5F5;
 }
 
@@ -524,16 +525,12 @@ hr {
 @media (max-width: 639px) {
     .hide, .show-on-load {
         max-height: 18.6vh;
-        max-width: 52.5vw;
+        max-width: 160vw;
     }
      
     .box {
         border-radius: 100%;
         transform: scale(.4);
-    }
-
-    .legend {
-        
     }
 }
 
@@ -546,14 +543,14 @@ hr {
 @media (min-width: 640px) and (max-width: 767px) {
     .hide, .show-on-load {
         max-height: 18.5vh;
-        max-width: 52vw;
+        max-width: 160vw;
     }
 }
 
 @media (min-width: 768px) and (max-width: 968px) {
     .hide, .show-on-load {
         max-height: 23vh;
-        max-width: 73vw;
+        max-width: 160vw;
     }
 
     .box {
@@ -570,7 +567,7 @@ hr {
 @media (min-width: 969px) and (max-width: 1279px) {
     .hide, .show-on-load {
         max-height: 18vh;
-        max-width: 120vw;
+        max-width: 100vw;
     }
 }
 
@@ -583,7 +580,7 @@ hr {
         z-index: 1;
         overflow-y: scroll;
         max-height: 17.9vh;
-        width: 52.5vw;
+        max-width: 120vw;
     }
 }
 
