@@ -60,6 +60,7 @@ hr {
 
 .element:hover > .name {
     color: red;
+    font-size: .7vw;
 }
 
 .id {
@@ -73,6 +74,7 @@ hr {
     font-size: .5vw;
     margin: 0;
     font-style: italic;
+    transition: all .3s;
 }
 
 .desc-info {
@@ -264,6 +266,7 @@ hr {
 
 .active > .name {
     color: red;
+    font-size: .7vw;
 }
 
 .active + .element {
